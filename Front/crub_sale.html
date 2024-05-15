@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.31/sweetalert2.css"
+        integrity="sha512-e+TwvhjDvKqpzQLJ7zmtqqz+5jF9uIOa+5s1cishBRfmapg7mqcEzEl44ufb04BXOsEbccjHK9V0IVukORmO8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">محاسبة</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="buyAllMonth.html">بيع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="saleAllMonth.html">شراء</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="table m-auto">
+        <h3 class="my-4">ادخال قطع الشراء</h3>
+        <div class="mb-3">
+            <label for="pieces" class="form-label">القطع</label>
+            <input type="text" class="form-control" id="pieces" aria-describedby="emailHelp">
+            <!-- <div id="nameAlert" class="alert-danger alert">Please start name capital latter</div> -->
+        </div>
+        <div class="mb-3">
+            <label for="NumbersOfPieces" class="form-label">العدد</label>
+            <input type="number" class="form-control"  min="1" id="NumbersOfPieces">
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">السعر</label>
+            <input type="number" class="form-control" min="1"  id="price">
+        </div>
+        <div class="mb-3">
+            <label for="typeOfpieces" class="form-label">النوع</label>
+            <input type="text" class="form-control" id="typeOfpieces">
+        </div>
+        <button type="submit" class="button" id="click">ادخال</button>
+
+        <table class="table m-3 table-striped w-100">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">#</th>
+                    <th scope="col" class="text-center">القطع</th>
+                    <th scope="col" class="text-center">العدد</th>
+                    <th scope="col" class="text-center">السعر</th>
+                    <th scope="col" class="text-center">النوع</th>
+                    <th scope="col" class="text-center">الناتج</th>
+                    <th scope="col" class="text-center">حدث</th>
+
+                </tr>
+            </thead>
+            <tbody id="demo" class="w-100!impotant">
+
+            </tbody>
+        </table>
+        <div class="my-4">
+            <p class="bolder fs-3 fw-bolder"> المجموع : <span id="total"></span></p>
+
+        </div>
+    </div>
+    <script src="crub_sale.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.31/sweetalert2.min.js"
+        integrity="sha512-aBqjkT2/vsvX+aKE8T8453SvYzNIql9Dinj960TBQdV/rFsxZvUL6NRlZX6L3mlsW04PxnZGZ8sIaITJhgy3bQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.31/sweetalert2.all.min.js"
+        integrity="sha512-nPHescbdU8D2Oti9KTcm/plNgELaWrzn1wWvlXyWHWq+wexu3MbcHpf+yDazEp+i+dXRu7UHuN2oSFBU8xQILw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
